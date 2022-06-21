@@ -11,10 +11,11 @@ function App() {
   const [tasksDone, setTaskDone] = useState([]);
   const [tasksTesting, setTaskTesting] = useState([]);
 
+  // Gets the api data and sets it to state for each task type
   useEffect(() => {
     axios.get('https://ej2services.syncfusion.com/production/web-services/api/Kanban')
       .then(function (response) {
-        // handle success
+        // Filter so it only shows respective items per status
         setTaskToDo(response.data.filter(t => t.Status === 'Open'));
         setTaskInProgress(response.data.filter(t => t.Status === 'InProgress'));
         setTaskDone(response.data.filter(t => t.Status === 'Close'));
@@ -25,6 +26,7 @@ function App() {
         console.log(error);
       });
   }, []);
+
   return (
     <div className="App">
       <div className='task_list'>

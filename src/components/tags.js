@@ -1,22 +1,18 @@
 import React from "react";
 
+
+// Gets the tags for the respective item and maps them
 const Tags = ({ tags }) => {
-    const initials = (name) => {
-        // let inital = '';
-        const nameSplit = name.split(' ');
-        return nameSplit[0][0] + nameSplit[1][0];
-    }
     return (
-        <div>
-            {tags.length > 0 ?
+        <div className="tags">
+            {
                 tags.map((tag) => {
                     return (
                         <div className='tag'>
                             {tag}
                         </div>
                     );
-                }) :
-                <h3>Loading tags!</h3>
+                })
             }
         </div>
     )

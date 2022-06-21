@@ -39,9 +39,6 @@
 }
 
 .task_list {
-  /* margin: 5px;
-  padding: 5px; */
-  /* background-color: lightgray; */
   width: 100%;
   display: flex;
 }
@@ -49,28 +46,28 @@
 .task_list_todo {
   margin: 5px;
   padding: 5px;
-  background-color: lightgray;
+  background-color: #F8F9FA;
   width: 25%;
 }
 
 .task_list_in_progress {
   margin: 5px;
   padding: 5px;
-  background-color: lightgray;
+  background-color: #F8F9FA;
   width: 25%;
 }
 
 .task_list_testing {
   margin: 5px;
   padding: 5px;
-  background-color: lightgray;
+  background-color: #F8F9FA;
   width: 25%;
 }
 
 .task_list_done {
   margin: 5px;
   padding: 5px;
-  background-color: lightgray;
+  background-color: #F8F9FA;
   width: 25%;
 }
 
@@ -81,11 +78,7 @@
   background-color: white;
   margin: 10%;
   border-radius: 20px;
-  /* height: 100px; */
-}
-
-h3 {
-  /* width: 20%; */
+display: inline-block;
 }
 
 p {
@@ -114,9 +107,12 @@ p {
 
 .tag {
   margin-left: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #ECECEC;
+  padding: 3px;
 }
-/* 
-.inital {
-   border: 1px solid;
-   border-radius: 100%;
-} */
+
+.tags {
+  display: flex;
+}
