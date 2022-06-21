@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -36,3 +37,86 @@
     transform: rotate(360deg);
   }
 }
+
+.task_list {
+  /* margin: 5px;
+  padding: 5px; */
+  /* background-color: lightgray; */
+  width: 100%;
+  display: flex;
+}
+
+.task_list_todo {
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  width: 25%;
+}
+
+.task_list_in_progress {
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  width: 25%;
+}
+
+.task_list_testing {
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  width: 25%;
+}
+
+.task_list_done {
+  margin: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  width: 25%;
+}
+
+.task {
+  border: 1px solid black;
+  width: 20vw;
+  text-align: left;
+  background-color: white;
+  margin: 10%;
+  border-radius: 20px;
+  /* height: 100px; */
+}
+
+h3 {
+  /* width: 20%; */
+}
+
+p {
+  padding-left: 5px;
+}
+
+.Critical {
+  border-left: 3px solid red;
+}
+
+.ReleaseBreaker {
+  border-left: 3px solid blue;
+}
+
+.Low {
+  border-left: 3px solid green;
+}
+
+.Normal {
+  border-left: 3px solid purple;
+}
+
+.High {
+  border-left: 3px solid orange;
+}
+
+.tag {
+  margin-left: 10px;
+}
+/* 
+.inital {
+   border: 1px solid;
+   border-radius: 100%;
+} */
